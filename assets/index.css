@@ -13,6 +13,7 @@
   width: 30px;
   height: 30px;
   background-image: url('../images/birds.png');
+  transition: top .3s linear;
 }
 
 .start {
@@ -27,14 +28,16 @@
   font-weight: bolder;
 }
 
-.start.start-white {
+.start-white {
   color: #fff;
   font-size: 24px;
+  transition: all .3s linear;
 }
 
-.start.start-blue {
+.start-blue {
   color: #09f;
   font-size: 36px;
+  transition: all .3s linear;
 }
 
 .score {
@@ -45,6 +48,7 @@
   font-size: 24px;
   color: #fff;
   font-weight: bolder;
+  display:none;
 }
 
 .mask {
@@ -55,6 +59,7 @@
   bottom: 0;
   background-color: #000;
   opacity: .7;
+  display:none;
 }
 
 .end {
@@ -63,6 +68,7 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  display:none;
   /* color: red; */
 }
 
@@ -70,6 +76,7 @@
   font-size: 35px;
   font-weight: bolder;
   color: red;
+  
 }
 
 .end .result,
