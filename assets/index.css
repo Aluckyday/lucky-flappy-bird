@@ -28,13 +28,13 @@
   font-weight: bolder;
 }
 
-.start-white {
+.start.start-white {
   color: #fff;
   font-size: 24px;
   transition: all .3s linear;
 }
 
-.start-blue {
+.start.start-blue {
   color: #09f;
   font-size: 36px;
   transition: all .3s linear;
@@ -60,6 +60,7 @@
   background-color: #000;
   opacity: .7;
   display:none;
+  z-index: 2;
 }
 
 .end {
@@ -70,6 +71,7 @@
   text-align: center;
   display:none;
   /* color: red; */
+  z-index: 3;
 }
 
 .end .over {
@@ -135,4 +137,37 @@
   font-size: 18px;
   font-weight: bolder;
   cursor: pointer;
+}
+.pipe{
+  position:absolute;
+  width: 52px;
+  /* background:red; */
+  height: 180px;
+  left: 300px;
+  z-index: 1;
+}
+.pipe.pipe-up{
+  top:0;
+  background-image:url(../images/pipe2.png);
+  background-position-y: bottom;
+}
+.pipe.pipe-bottom{
+  bottom:0;
+  background-image:url(../images/pipe1.png);
+}
+audio{
+  display: none;
+}
+button{
+  display: inline-block;
+  border:none;
+  height: 107px;
+  width: 50%;
+  color:red;
+  font-size:25px;
+  background-color:#fff;
+  outline: none;
+}
+.btn{
+  float: right;
 }

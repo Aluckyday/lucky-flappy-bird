@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>flappy bird</title>
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/index.css">
+    <link rel="icon" href="./images/bird.png">
 </head>
 <body>
   <div id="game">
@@ -18,28 +19,28 @@
       <div class="result">Your Results:</div>
       <div class="final-score">0</div>
       <ul class="rank-list">
-        <li class="rank-item">
-          <span class="rank-degree first">1</span>
-          <span class="rank-score">2</span>
-          <span class="rank-time">2020.06.15 20:49:06</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-degree second">1</span>
-          <span class="rank-score">25</span>
-          <span class="rank-time">2020.06.15 20:49:06</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-degree third">1</span>
-          <span class="rank-score">25</span>
-          <span class="rank-time">2020.06.15 20:49:06</span>
-        </li>
       </ul>
       <div class="restart ">重新开始</div>
     </div>
+    <audio controls="controls"loop="loop" preload="auto">
+        <source src="./audio/mz.mp3">
+    
+    </audio>
+
+    <audio controls="controls"loop="loop" preload="auto">
+        <source src="./audio/fldxn.mp3">
+      
+    </audio>
+    
+    
   </div>
+  <button>背景音乐</button>
+  <button class="btn">暂停音乐</button>
+  <script src="./utils.js"></script>
   <script src="./index.js"></script>
   <script>
       bird.init();
+      console.log(bird.oAudio[1])
   </script>
 </body>
 </html>
